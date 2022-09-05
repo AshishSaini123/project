@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loginpage</title>
+  </head>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+  }
+  body {
+    background-color: #8fa6bc;
+  }
+  div.container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 50px 50px -50px darkslategray;
+    /* border-radius: 100px; */
+  }
+  
+  div.container div.myform {
+    width: 270px;
+    margin-right: 10px;
+    height: 370px;
+  }
+  
+  div.container div.myform h1 {
+    color: #1c1c1e;
+    margin-bottom: 40px;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+  
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  p{
+    margin:-20px 0 ;
+  }
+  
+  div.container div.myform input {
+    /* border: none; */
+    outline: black;
+    border-radius: 0;
+    width: 100%;
+  
+    /* border-bottom: 2px solid #1c1c1e; */
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    margin-bottom: 20px;
+    padding: 18px 0;
+    padding: 10px;
+    font-size: 15px;
+    padding: 10px 5px 10px 5px ;
+        width: 80%;
+        gap: 10px;
+        /* line-height: 0px; */
+        margin-bottom: 10px;
+        border: none;
+        
+   
+  }
+  
+  button{
+    width:100%;
+    padding: 18px 0;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(26, 175, 209);
+    border: 0;
+  }
+  div.container div.myform button :hover {
+    background: black;
+    color: black;
+  }
+ 
+  h2 {
+    margin-top: 2px;
+    padding: 10px;
+  }
+  
+  
+  p {
+    margin-top: 40px;
+    text-align: center;
+  }
+  button :hover {
+    background-color: black;
+    cursor: pointer;
+    outline: #1c1c1e;
+    border: none;
+  }
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: red;
+  }
+
+</style>
+  <body>
+    <!-- <div class="container"> -->
+     
+      <div class="container">
+      <div class="myform">
+        
+        <form onsubmit="signup(event)">
+
+          <h1>Login</h1>
+          
+          <input type="text" id="mail" placeholder="Email" />
+          <input type="password" id="password" placeholder="Password" />
+          
+          <button type="submit">login</button>
+          <p>Forget <a href="login.html">Password</a>?</p>
+          <p>Doesn't have an account? <a href="login.html"> Sign up </a></p>
+        </form>
+        
+       
+      </div>
+    </div>
+  </body>
+</html>
